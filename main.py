@@ -19,6 +19,7 @@ class Player():
         level = 0
         self.Profile = {"name": name, "age": age, "weight": weight, "species": species, "level": level}
         self.saveProfile()
+        register_date = datetime.datetime.now().date()
         os.system("cls")
         print("\nSuccessfully registered!\n(0 to go back to main menu)")
         choice = input()
